@@ -21,21 +21,29 @@ function handleText(textNode) {
 
 function replaceText(v)
 {
-    // Fix some misspellings
-    //v = v.replace(/\b(M|m)illienial(s)?\b/g, "$1illennial$2");
-    //v = v.replace(/\b(M|m)illenial(s)?\b/g, "$1illennial$2");
-    //v = v.replace(/\b(M|m)ilennial(s)?\b/g, "$1illennial$2");
-    //v = v.replace(/\b(M|m)ilenial(s)?\b/g, "$1illennial$2");
+
 
     // Trumps Hair
     v = v.replace(/\b(T|t)rump's Hair\b/g, "Chump's Dead Monkey Wig");
     v = v.replace(/\b(T|t)rumps Hair\b/g, "Chumps Dead Monkey Wig");   
 
     // Trump
-    v = v.replace(/\bTrump\b/g, "Chumps");
-    v = v.replace(/\bTrumps\b/g, "Chumps"); 
-    v = v.replace(/\bTrump's\b/g, "Chump's");   
+    v = v.replace(/\b(T|t)rump\b/g, "Chump");
+    v = v.replace(/\b(T|t)rumps\b/g, "Chumps"); 
+    v = v.replace(/\b(T|t)rump's\b/g, "Chump's");   
 
+
+ 	// destroy Trump
+    v = v.replace(/\b(D|d)estroy (E|e)arth\b/g, "destroy Donald Trump The Chump");
+    v = v.replace(/\b(D|d)estroy (T|t)he (E|e)arth\b/g, "destroy Donald Trump The Chump");
+    v = v.replace(/\b(D|d)estroy (T|t)he (W|w)orld\b/g, "destroy Donald Trump The Chump");
+    v = v.replace(/\b(D|d)estroy (W|w)orld\b/g, "destroy Donald Trump The Chump");
+   
+   // Immigration
+    v = v.replace(/\b(I|i)mmigration\b/g, "$1mmigration is good, Donald Chump is bad");
+    
+    
+   
     return v;
 }
 
